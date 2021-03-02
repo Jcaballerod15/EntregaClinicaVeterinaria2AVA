@@ -4,7 +4,7 @@ package gestion;
  *
  * @author xavier
  */
-public class Cosita extends Mascota {
+public class Gato extends Mascota {
     //ATRIBUTOS
 
     private float gradosalvaje;
@@ -19,11 +19,11 @@ public class Cosita extends Mascota {
      * @param duenyo
      * @param gradosalvaje
      */
-    public Cosita(long ID, String nombre, int edad, String raza, Persona duenyo, float gradosalvaje) {
+    public Gato(long ID, String nombre, int edad, String raza, Persona duenyo, float gradosalvaje) {
         super(ID, nombre, edad, raza, duenyo);
         this.gradosalvaje = gradosalvaje;
     }
 
-    //MÉTODOS SETTER & GETTER - PARA HACER (P.E. UTILIZANDO LA REFACTORIZACIÓN DEL ATRIBUTO)
+    //Mï¿½TODOS SETTER & GETTER - PARA HACER (P.E. UTILIZANDO LA REFACTORIZACIï¿½N DEL ATRIBUTO)
 
 }
