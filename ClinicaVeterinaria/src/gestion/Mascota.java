@@ -2,12 +2,9 @@ package gestion;
 
 import java.io.Serializable;
 
-public class Mascota implements Serializable{
+public class Mascota extends Animal implements Serializable{
 
-	private long ID;
-    private String nombre;
-    private int edad;
-    private String raza;
+	private String nombre;
     private Persona duenyo;
 
     public Mascota(long ID, String nombre, int edad, String raza, Persona duenyo) {
@@ -26,22 +23,6 @@ public class Mascota implements Serializable{
         this.nombre = nombre;
     }
 
-    public int getEdad() {
-        return edad;
-    }
-
-    public void setEdad(int edad) {
-        this.edad = edad;
-    }
-
-    public String getRaza() {
-        return raza;
-    }
-
-    public void setRaza(String raza) {
-        this.raza = raza;
-    }
-
     public Persona getDuenyo() {
         return duenyo;
     }
@@ -52,25 +33,6 @@ public class Mascota implements Serializable{
 
     @Override
     public String toString() {
-        return ("Nombre: " + nombre + " Edad: " + edad + " Raza: " + raza + " Dueño: " + duenyo.toString());
+        return ("Nombre: " + nombre + " Edad: " + edad + " Raza: " + raza + " Dueï¿½o: " + duenyo.toString());
     }
-
-	private long getID() {
-		return ID;
-	}
-
-	private void setID(long iD) {
-		this.ID = iD;
-	}
-	
-	public boolean repira() {
-		//aquí vendría el código para la respiración
-		return true;
-	}
-
-	public boolean come(float cantidad) {
-		//aquí vendría el código para ver lo que comen
-		return true;
-		
-	}
 }
