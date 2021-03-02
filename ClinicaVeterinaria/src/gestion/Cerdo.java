@@ -8,7 +8,7 @@ import java.io.Serializable;
  */
 public class Cerdo extends Mascota{
     //ATRIBUTOS
-    public float peso;
+    private float peso;
     
     //CONSTRUCTOR
     /**
@@ -25,4 +25,13 @@ public class Cerdo extends Mascota{
         this.peso = peso;
     }
 
+	public float getPeso() {
+		return peso;
+	}
+
+	public void setPeso(float peso) {
+		this.peso = peso;
+	}
+    
+    
 }
